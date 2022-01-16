@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
 body {
-  box-sizing: border-box;
+  font-family: "DIN 1451 Std", sans-serif;
 }
 
 nav {
@@ -19,6 +20,12 @@ nav a {
   display: block;
   padding: 1.5em;
   color: #393d40;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  width: 30vw;
 }
 
 main {
@@ -35,5 +42,12 @@ section {
 footer {
   background-color: #f2f2f0;
   display: flex;
+  flex-flow: row;
   min-height: 4rem;
+  justify-content: flex-end;
+}
+
+footer a {
+  display: block;
+  padding: 1.5rem;
 }
