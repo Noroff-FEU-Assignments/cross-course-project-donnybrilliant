@@ -9,6 +9,7 @@
 
 body {
   font-family: "DIN 1451 Std", sans-serif;
+  color: #393d40;
 }
 
 nav {
@@ -16,26 +17,57 @@ nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  padding-right: 2rem;
 }
 
 nav a {
   display: block;
   padding: 1.5em;
+}
+
+nav a:hover {
+  color: #f2a679;
+}
+
+a {
   color: #393d40;
 }
 
-#logo {
-  display: flex;
-  align-items: center;
-  width: 30vw;
+header img {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  max-height: 3rem;
+  padding-left: 2rem;
+}
+
+header img:hover {
+  opacity: 0.6;
 }
 
 main {
-  min-width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  min-height: 100vh;
   background: url("../images/background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+}
+
+.button {
+  background-color: #ffd144;
+  width: 250px;
+  padding: 1rem 1rem 0.5rem 1rem;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  left: calc(50% - 125px);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #f2a679;
 }
 
 section {
@@ -47,6 +79,7 @@ footer {
   flex-flow: row;
   min-height: 4rem;
   justify-content: flex-end;
+  padding-right: 2rem;
 }
 
 footer a {
