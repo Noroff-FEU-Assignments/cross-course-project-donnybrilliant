@@ -33,6 +33,10 @@ a {
   color: #393d40;
 }
 
+h2 {
+  font-size: 4rem;
+}
+
 header img {
   position: absolute;
   top: 0.5rem;
@@ -45,12 +49,13 @@ header img:hover {
   opacity: 0.6;
 }
 
-main {
+section:first-of-type {
   max-width: 100%;
   min-height: 100vh;
   background: url("../images/background.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-position: center;
 }
 
 .button {
@@ -70,7 +75,25 @@ main {
   background-color: #f2a679;
 }
 
-section {
+section#product-overview {
+  display: flex;
+  background: linear-gradient(180deg, #3a3e41 0%, #f7f7f7 100%);
+  height: 100vh;
+}
+
+section.product-hero {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+section.product-hero h2 {
+  padding: 10rem;
+}
+
+#climber {
+  background: url("../images/climber.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 footer {
@@ -85,4 +108,16 @@ footer {
 footer a {
   display: block;
   padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+footer a:hover {
+  color: #f2a679;
+}
+
+@media (max-width: 850px) {
+  section.product-hero h2 {
+    padding: 1.5rem 1rem;
+    font-size: 3rem;
+  }
 }
