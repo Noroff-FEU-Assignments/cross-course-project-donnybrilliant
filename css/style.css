@@ -19,7 +19,7 @@ header {
 }
 
 header img {
-  max-width: 5rem;
+  max-width: 6rem;
   margin: 1.5rem;
 }
 
@@ -34,7 +34,7 @@ nav {
 #hamburger-checkbox:checked ~ nav {
   display: flex;
   flex: 0 0 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 header img:hover {
@@ -43,21 +43,26 @@ header img:hover {
 
 header label {
   padding: 1.5rem;
+  cursor: pointer;
 }
 
 nav a {
   padding: 1.5rem;
 }
+
+h2 {
+  font-size: 5rem;
+  padding-top: 6rem;
+  color: #f2f2f2;
+  text-align: center;
+}
+
 nav a:hover {
   color: #f2a679;
 }
 
 a {
   color: #393d40;
-}
-
-h2 {
-  font-size: 4rem;
 }
 
 section:first-of-type {
@@ -86,26 +91,54 @@ section:first-of-type {
   background-color: #f2a679;
 }
 
-section#product-overview {
-  display: flex;
+#product-overview {
   background: linear-gradient(180deg, #3a3e41 0%, #f7f7f7 100%);
-  height: 100vh;
 }
 
-section.product-hero {
+#product-overview > p {
+  color: #f2f2f0;
+  text-align: center;
+}
+
+#product-wrapper {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem 2rem;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#product-wrapper > article {
+  flex: 1;
+  min-width: 23%;
+  max-width: 100%;
+}
+
+#product-wrapper img {
+  width: 100%;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.product-info {
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+/* 
+.product-hero {
   max-width: 100vw;
   min-height: 100vh;
-}
-
-section.product-hero h2 {
-  padding: 10rem;
 }
 
 #climber {
   background: url("../images/climber.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-}
+} */
 
 footer {
   background-color: #f2f2f0;
@@ -125,12 +158,6 @@ footer a:hover {
   color: #f2a679;
 }
 
-@media (max-width: 850px) {
-  section.product-hero h2 {
-    padding: 1.5rem 1rem;
-    font-size: 3rem;
-  }
-}
 @media (min-width: 500px) {
   nav {
     display: block;
@@ -139,5 +166,16 @@ footer a:hover {
 
   header label {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #product-wrapper > article {
+    min-width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  #product-wrapper > article {
+    min-width: 100%;
   }
 }
