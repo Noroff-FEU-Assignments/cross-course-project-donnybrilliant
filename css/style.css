@@ -59,9 +59,8 @@ nav a {
 }
 
 h2 {
-  font-size: 5rem;
-  padding-top: 6rem;
-  color: #f2f2f2;
+  font-size: 3rem;
+  padding: 3rem 1rem 1rem 1rem;
   text-align: center;
 }
 
@@ -101,15 +100,16 @@ section:first-of-type {
 
 #product-overview {
   background: linear-gradient(180deg, #3a3e41 0%, #f7f7f7 100%);
+  color: #f2f2f0;
 }
 
 #product-overview > p {
-  color: #f2f2f0;
   text-align: center;
+  padding: 1rem;
 }
 
 #product-wrapper {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 6rem 2rem;
@@ -120,8 +120,7 @@ section:first-of-type {
 
 #product-wrapper > article {
   flex: 1;
-  min-width: 23%;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 #product-wrapper img {
@@ -151,9 +150,8 @@ section:first-of-type {
 footer {
   background-color: #f2f2f0;
   display: flex;
-  min-height: 4rem;
   justify-content: space-between;
-  padding-right: 2rem;
+  padding: 1.5rem;
 }
 
 footer a {
@@ -177,13 +175,34 @@ footer a:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
+  footer a {
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 700px) {
   #product-wrapper > article {
     min-width: 45%;
   }
-}
-@media (max-width: 500px) {
-  #product-wrapper > article {
-    min-width: 100%;
+  footer {
+    padding: 0;
   }
 }
+
+@media (min-width: 800px) {
+  #product-wrapper > article {
+    min-width: 30%;
+  }
+}
+
+@media (min-width: 900px) {
+  #product-wrapper > article {
+    min-width: 20%;
+  }
+  h2 {
+    padding-top: 6rem;
+  }
+}
+
+/* footer   min-height: 4rem; */
