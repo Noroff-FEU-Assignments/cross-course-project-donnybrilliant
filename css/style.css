@@ -45,6 +45,10 @@ nav {
   justify-content: space-evenly;
 }
 
+#hamburger-checkbox:checked ~ label i::after {
+  content: "\f057";
+}
+
 header img:hover {
   opacity: 0.6;
 }
@@ -52,6 +56,20 @@ header img:hover {
 header label {
   padding: 1.5rem;
   cursor: pointer;
+}
+label i::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+label i::after {
+  font-family: "Font Awesome 5 Free"; 
+  content: "\f0c9";
+  font-weight: 900;
+  font-style: normal;
 }
 
 nav a {
