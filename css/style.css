@@ -5,6 +5,7 @@
   --white: #f2f2f0;
   --black: #393d40;
   --shadow: #00000029;
+  --grey: #393d40d0;
 }
 
 * {
@@ -92,7 +93,7 @@ a {
   color: var(--black);
 }
 
-section:first-of-type {
+#intro {
   max-width: 100%;
   min-height: 100vh;
   background: url("../images/background.png");
@@ -101,7 +102,7 @@ section:first-of-type {
   background-position: center;
 }
 
-.button {
+.cta-button {
   background-color: var(--yellow);
   width: 250px;
   padding: 1rem 1rem 0.5rem 1rem;
@@ -114,13 +115,15 @@ section:first-of-type {
   border-radius: 10px;
 }
 
-.button:hover {
+.cta-button:hover {
   background-color: var(--pink);
 }
 
 #product-overview {
   background: linear-gradient(180deg, #3a3e41 0%, #f7f7f7 100%);
   color: var(--white);
+  scroll-margin-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 #product-overview > p {
@@ -138,9 +141,19 @@ section:first-of-type {
   margin-right: 10%;
 }
 
-#product-wrapper > article {
+#product-wrapper article {
   flex: 1;
   min-width: 100%;
+  cursor: pointer;
+}
+
+#product-wrapper article:hover > img {
+  background-color: var(--white);
+}
+
+#product-wrapper article:hover > .product-info {
+  background-color: var(--pink);
+  border: solid var(--pink) 2px;
 }
 
 #product-wrapper img {
@@ -151,21 +164,24 @@ section:first-of-type {
 }
 
 .product-info {
+  background-color: var(--grey);
   border: solid var(--black) 2px;
   border-radius: 10px;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
-/* 
+
 .product-hero {
   max-width: 100vw;
-  min-height: 100vh;
+  min-height: 500px;
 }
 
 #climber {
   background: url("../images/climber.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-} */
+}
 
 footer {
   background-color: var(--white);
