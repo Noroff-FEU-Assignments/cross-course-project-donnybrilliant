@@ -4,8 +4,8 @@
   --yellow: #ffd144;
   --white: #f2f2f0;
   --black: #393d40;
-  --shadow: #00000029;
-  --grey: #393d40d0;
+  --shadow: hsla(0, 0%, 0%, 0.161);
+  --grey: hsla(206, 6%, 24%, 0.816);
 }
 
 * {
@@ -35,8 +35,24 @@ header img {
   margin: 0.8rem 0rem 0rem 1.5rem;
 }
 
+header img:hover {
+  opacity: 0.6;
+}
+
 nav {
   display: none;
+}
+
+nav a {
+  padding: 1.5rem;
+}
+
+nav a:hover {
+  color: var(--pink);
+}
+
+a {
+  color: var(--black);
 }
 
 #hamburger-checkbox {
@@ -47,19 +63,10 @@ nav {
   display: flex;
   justify-content: space-evenly;
   min-width: 100vw;
-  /*   overflow: hidden;
-  z-index: 10;
-  position: absolute;
-  top: 4rem;
-  left: calc(50% - 100px); */
 }
 
 #hamburger-checkbox:checked ~ label > span::after {
   content: "\f057";
-}
-
-header img:hover {
-  opacity: 0.6;
 }
 
 header label {
@@ -75,13 +82,9 @@ label > span::after {
   font-style: normal;
 }
 
-nav a {
-  padding: 1.5rem;
-}
-
 h2 {
   font-size: 3rem;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -92,37 +95,35 @@ h4 {
   font-size: 4rem;
 }
 
-nav a:hover {
-  color: var(--pink);
-}
-
-a {
-  color: var(--black);
-}
-
 #intro {
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 93vh;
   background: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cta-button {
-  background-color: var(--yellow);
-  width: 250px;
-  padding: 1rem 1rem 0.5rem 1rem;
-  text-align: center;
+#cta-button {
   display: inline-block;
   position: absolute;
   top: 200px;
   left: calc(50% - 125px);
+}
+
+.button {
+  background-color: var(--yellow);
+  width: 250px;
+  padding: 1rem 1rem 0.5rem 1rem;
+  text-align: center;
   cursor: pointer;
   border-radius: 10px;
 }
 
-.cta-button:hover {
+.button:hover {
   background-color: var(--pink);
 }
 
@@ -131,6 +132,7 @@ a {
   color: var(--white);
   scroll-margin-top: 3rem;
   padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 #product-overview > p {
@@ -254,20 +256,20 @@ footer a:hover {
     display: block;
     flex: none;
   }
+  footer a {
+    padding: 1rem;
+  }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 800px) {
   footer a {
     padding: 0.3rem;
   }
-}
+} */
 
 @media (min-width: 700px) {
   #product-wrapper > article {
     min-width: 45%;
-  }
-  footer {
-    padding: 0;
   }
 }
 
@@ -280,9 +282,6 @@ footer a:hover {
 @media (min-width: 900px) {
   #product-wrapper > article {
     min-width: 20%;
-  }
-  h2 {
-    padding-top: 6rem;
   }
 }
 
