@@ -112,8 +112,37 @@ span.breadcrumb > h1 {
 article.cart-line {
   border: solid var(--black) 2px;
   border-radius: 10px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: space-evenly;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding: 2rem;
+  width: 80%;
 }
 
 article.cart-line img {
+  max-height: 5rem;
+}
+
+article.cart-line h2 {
+  font-size: 1rem;
+}
+
+article#shipping {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: space-between;
+}
+
+
+
+@media (min-width: 800px) {
+  .content-frame#product-page {
+    max-height: 80vh;
+    display: block;
 }
