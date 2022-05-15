@@ -80,6 +80,7 @@ label > span::after {
   content: "\f0c9";
   font-weight: 900;
   font-style: normal;
+  color: black;
 }
 
 h2 {
