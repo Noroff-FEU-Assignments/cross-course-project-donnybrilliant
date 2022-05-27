@@ -187,6 +187,16 @@ h4 {
   min-height: 500px;
 }
 
+h4 {
+  padding: 2rem 1rem;
+}
+
+.product-hero:hover {
+
+}
+
+
+
 #climber {
   background: url("../images/climber.jpg") no-repeat right;
   background-size: cover;
@@ -224,6 +234,7 @@ h4 {
 #urban {
   background: url("../images/urban.jpg") no-repeat center;
   background-size: cover;
+  color: var(--white);
 }
 
 footer {
@@ -231,6 +242,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+  
 }
 
 footer a {
@@ -241,6 +253,12 @@ footer a {
 
 footer a:hover {
   color: var(--pink);
+}
+
+@media (max-width: 420px) {
+  footer a{
+    padding: 0.5rem;
+  }
 }
 
 @media (min-width: 500px) {
@@ -287,3 +305,21 @@ footer a:hover {
 }
 
 /* footer   min-height: 4rem; */
+
+
+#login-page {
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+#login-page input 
+{
+width: 80%;
+}
+
+#login-page h1 {
+  align-self: center;
+  margin-bottom: 1rem;
+}
