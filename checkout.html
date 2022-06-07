@@ -43,25 +43,36 @@
         </nav>
     </header>
     <main>
-        <section id="intro">
-            <section id="product-page" class="content-frame">
-                <h1>THE EXPLORER</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus necessitatibus obcaecati modi
-                    ad perferendis voluptatum, molestiae eveniet non fugit nemo, ea enim. Optio, sunt reiciendis.
-                    Incidunt odio minima nobis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-                    quibusdam similique commodi rem sed, aperiam facere modi ad quae laudantium corrupti sapiente neque
-                    quod ex, quas unde iure quos ea.</p>
-                <p class="icons"><i class="fas fa-snowflake"></i><i class="fas fa-sun"></i><i class="fas fa-wind"></i><i
-                        class="fas fa-water"></i><i class="fas fa-temperature-high"></i><i
-                        class="fas fa-temperature-low"></i>
-                </p>
-                <img src="images/jacket.png" alt="The Explorer Product Photo">
-                <p class="price">$99,99</p>
-                <a href="success.html" id="next-button" class="button">
-                    <h2>PROCEED</h2>
-                </a>
+        <section id="cart" class="content-frame">
+            <span class="breadcrumb">
+                CART<i class="fas fa-arrow-circle-right"></i>
+                <h1>CHECKOUT</h1> <i class="fas fa-arrow-circle-right"></i> CONFIRMATION
+            </span>
+            <form>
+                <div>
+                    <label>
+                        First name (required)
+                        <input name="firstName" id="firstName" />
+                    </label>
+                </div>
+    
+                <div>
+                    <label>
+                        Last name (minimum 4 characters)
+                        <input name="lastName" id="lastName" />
+                    </label>
+                </div>
+    
+                <div>
+                    <label>
+                        Email (required)
+                        <input name="email" id="email" />
+                    </label>
+                </div>
+    
+                <button disabled>Send</button>
+            </form>
             </section>
-        </section>
     </main>
     <footer>
         <a href="contact.html">CONTACT US</a>

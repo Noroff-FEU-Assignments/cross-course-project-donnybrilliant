@@ -100,3 +100,16 @@ p.price {
   }
 }
 
+span.breadcrumb {
+  font-size: 1.8rem;
+  color: hsla(22, 82%, 71%, 0.788);
+}
+
+span.breadcrumb i {
+  padding: 0 1rem;
+  color: var(--grey);
+}
+
+span.breadcrumb > h1 {
+  color: var(--black);
+} 
