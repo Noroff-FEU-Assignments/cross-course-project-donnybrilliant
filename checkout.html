@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="RAINYDAYS - Yellow Rain Coats">
     <meta name="keywords" content="rainydays, yellow, rain, coats, jackets, adventures, explore, outdoors">
-    <title>RAINYDAYS - Product Page</title>
+    <title>RAINYDAYS - Checkout</title>
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product.css">
@@ -45,28 +45,89 @@
     <main>
         <section id="cart" class="content-frame">
             <span class="breadcrumb">
-                CART<i class="fas fa-arrow-circle-right"></i>
+                <a href="cart.html">CART</a><i class="fas fa-arrow-circle-right"></i>
                 <h1>CHECKOUT</h1> <i class="fas fa-arrow-circle-right"></i> CONFIRMATION
             </span>
+         
             <form>
+                <h2>Contact information</h2>
                 <div>
                     <label>
-                        First name (required)
-                        <input name="firstName" id="firstName" />
+                        Email
+                        <input name="email" id="email" type="email" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        First name
+                        <input name="firstName" id="firstName" placeholder="Required"/>
                     </label>
                 </div>
     
                 <div>
                     <label>
-                        Last name (minimum 4 characters)
-                        <input name="lastName" id="lastName" />
+                        Last name
+                        <input name="lastName" id="lastName" placeholder="Minimum 4 characters" />
                     </label>
                 </div>
-    
                 <div>
                     <label>
-                        Email (required)
-                        <input name="email" id="email" />
+                        Address
+                        <input name="address" id="address" placeholder="Street name, number"/>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Apartment
+                        <input name="apartment" id="apartment" placeholder="Suite, flat etc (optional)"/>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Post Code
+                        <input name="postCode" id="postCode" type="number" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        City
+                        <input name="city" id="city" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Country
+                        <input name="country" id="country" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Phone
+                        <input name="phone" id="phone" type="tel" placeholder="Phone number with country code"/>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="newsletter" id="newsletter" type="checkbox" />
+                        Sign up for our newsletter
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="register" id="register" type="checkbox" />
+                        Register an account for future use
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Set a password
+                        <input name="password1" id="password1" type="password" placeholder="At least 8 characters" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Repeat password
+                        <input name="password2" id="password2" type="password" placeholder="At least 8 characters" />
                     </label>
                 </div>
     
@@ -79,7 +140,7 @@
         <div class="social-media">
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
 </body>
