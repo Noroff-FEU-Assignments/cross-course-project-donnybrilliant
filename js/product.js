@@ -15,11 +15,11 @@ async function getProduct(url) {
     productPage.innerHTML = "";
     productPage.innerHTML += `
     <h1>${product.name}</h1>
-    ${product.description}
-    <img src="${product.images[0].src}" alt="The Explorer Product Photo">
-    <p class="price">${productPrice}</p>
+    <div class="product-description">${product.description}</div>
+    <img src="${product.images[0].src}" alt="${product.images[0].alt}">
+    <h2>${productPrice}</h2>
     <a href="cart.html?id=${product.id}" id="next-button" class="button">
-        <h2>ADD TO CART</h2>
+        <h6>ADD TO CART</h6>
     </a>`;
   } catch (error) {
     productPage.innerHTML =

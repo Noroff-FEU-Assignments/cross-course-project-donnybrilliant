@@ -53,6 +53,7 @@ nav a:hover {
 
 a {
   color: var(--black);
+  cursor: pointer;
 }
 
 a:hover {
@@ -79,6 +80,10 @@ header label {
   float: right;
 }
 
+header label:hover {
+  color: var(--pink);
+}
+
 label > span::after {
   font-family: "Font Awesome 5 Free";
   content: "\f0c9";
@@ -86,7 +91,13 @@ label > span::after {
   font-style: normal;
 }
 
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
 h2 {
+  text-transform: uppercase;
   font-size: 3rem;
   padding: 1rem;
   text-align: center;
@@ -94,11 +105,28 @@ h2 {
 
 h3 {
   text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
 }
 
 h4 {
   font-size: 4rem;
+  text-transform: uppercase;
+  padding: 2rem 2rem;
+  
 }
+
+h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+
 
 #intro {
   max-width: 100%;
@@ -112,59 +140,95 @@ h4 {
   align-items: center;
 }
 
-#cta-button {
-  display: inline-block;
-  position: absolute;
-  top: 200px;
-  left: calc(50% - 125px);
-}
-
-#cta-button:hover {
-  color: var(--black);
-}
-
 .button {
-  background-color: var(--yellow);
   width: 250px;
   padding: 1rem 1rem 0.5rem 1rem;
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
+  background-color: var(--pink);
+  text-transform: uppercase;
 }
 
 .button:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+#cta-button {
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  left: calc(50% - 125px);
+  background-color: var(--yellow);
+}
+
+#cta-button:hover {
+  color: var(--black);
   background-color: var(--pink);
 }
 
 #next-adventure {
-  background: linear-gradient(180deg, #3a3e41 0%, #f7f7f7 100%);
+  background: linear-gradient(180deg, #3a3e41 0%, #1C1C1E 100%);
   color: var(--white);
-  scroll-margin-top: 3rem;
   padding-bottom: 5rem;
   padding-top: 5rem;
   text-align: center;
-
+  min-height: 100vh;
 }
 
-#next-adventure p {
-  padding: 1rem;
+.quotes {
+  margin-bottom: 3rem;
 }
 
-#continue-arrow {
-  align-self: center;
-  font-size: 3rem;
+.quotes p {
+  padding: 1.5rem;
+}
+
+.quotes i {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.quotes a {
   color: var(--white);
+  text-decoration: underline;
+}
+
+.quotes a:hover {
+  color: var(--pink);
+}
+
+.continue-arrow {
+  align-self: center;
+  font-size: 1.5rem;
   text-align: center;
+  margin: 4rem;
+}
+
+.continue-arrow a {
+  color: var(--white);
+}
+
+.continue-arrow a:hover {
+color: var(--yellow);
+}
+
+.continue-arrow p {
+  margin: 1.5rem;
+}
+
+#product-overview {
+  padding-top: 5rem;
+  scroll-margin-top: 5rem;
 }
 
 .product-wrapper {
-  margin-top: 5rem;
+  margin: 5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 6rem 2rem;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .product-wrapper div {
@@ -173,13 +237,13 @@ h4 {
   cursor: pointer;
 }
 
-.product-wrapper div:hover > img {
-  background-color: var(--white);
+.product-wrapper div:hover img {
+  background-color: var(--pink);
 }
 
-.product-wrapper div:hover > .product-info {
+.product-wrapper div:hover .product-button {
   background-color: var(--pink);
-  border: solid var(--pink) 2px;
+  color: var(--black);
 }
 
 .product-wrapper img {
@@ -189,23 +253,23 @@ h4 {
   padding: 1rem;
 }
 
-.product-info {
-  background-color: var(--grey);
+.product-button {
+  background-color: var(--yellow);
   border: solid var(--black) 2px;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.3rem;
+  padding-top: 1.8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
+#adventure-list {
+  scroll-margin-top: 3rem;
+}
 .product-hero {
   min-width: 100vw;
   min-height: 500px;
-  text-transform: uppercase;
-}
-
-h4 {
-  padding: 2rem 1rem;
 }
 
 .product-hero:hover {
@@ -222,6 +286,7 @@ h4 {
   color: var(--white);
 }
  */
+
 footer {
   background-color: var(--white);
   display: flex;
@@ -265,11 +330,6 @@ footer a:hover {
   }
 }
 
-/* @media (max-width: 800px) {
-  footer a {
-    padding: 0.3rem;
-  }
-} */
 
 @media (min-width: 700px) {
   .product-wrapper > div {
@@ -279,19 +339,16 @@ footer a:hover {
 
 @media (min-width: 800px) {
   .product-wrapper > div {
-    min-width: 30%;
+    min-width: 25%;
   }
 }
 
 @media (min-width: 900px) {
   .product-wrapper > div {
     min-width: 20%;
-    padding: 0;
   }
 
 }
-
-/* footer   min-height: 4rem; */
 
 
 #login-page {
@@ -332,15 +389,82 @@ width: 80%;
   margin: 1rem;
   padding: 2rem;
   background-color: hsla(60, 8%, 95%, 0.8);
+  margin-top: 5rem;
+}
+
+.content-frame h1 {
+  padding-top: 1rem;
+}
+
+#product-page {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin-top: 5rem;
 }
 
-.content-frame h1 {
-  font-size: 1.8rem;
-  padding-top: 1rem;
+#product-page p {
+margin-bottom: 1.5rem;
+}
+
+
+#product-page .icons {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+#product-page .icons i {
+  padding: 0.3rem;
+}
+
+@media (min-width: 800px) {
+  #product-page {
+    padding: 4rem;
+    display: grid;
+    column-gap: 6rem;
+   /* row-gap: 1rem; */
+    grid-template-areas:
+      "h1 h1 h1"
+      "image info info"
+      "image info info"
+      "image price button";
+  }
+
+  #product-page * {
+    border: solid 2px red;
+  }
+
+  #product-page h1 {
+    grid-area: h1;
+    padding-bottom: 1rem;
+  }
+
+  #product-page img {
+    grid-area: image;
+ 
+  }
+
+  #product-page .product-description {
+    grid-area: info;
+    align-self: stretch;
+  }
+
+  #product-page h2 {
+    grid-area: price;
+    justify-self: end;
+
+  }
+ 
+  #product-page a {
+    grid-area: button;
+    justify-self: end;
+
+  }
+
+  #product-page .icons {
+    text-align: left;
+  }
+
+  
 }

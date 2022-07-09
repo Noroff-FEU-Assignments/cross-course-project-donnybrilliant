@@ -78,11 +78,14 @@
     cursor: pointer;
     float: right;
   }
+
+  header label:hover {
+      color: var(--pink);
+  }
   
   label > span::after {
     font-family: "Font Awesome 5 Free";
     content: "\f0c9";
     font-weight: 900;
     font-style: normal;
-    color: black;
   }

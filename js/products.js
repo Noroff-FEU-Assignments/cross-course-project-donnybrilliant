@@ -20,8 +20,8 @@ async function getProducts(url) {
         <a href="product.html?id=${product.id}">
         <div>
         <img src="${productImage}" alt="${productAlt}" />
-        <div class="product-info">
-          <h3>${productName}</h3>
+        <div class="product-button">
+          <h5>${productName}</h5>
           <p>${productPrice}</p>
         </div></a>`;
     });
