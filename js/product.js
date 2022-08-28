@@ -10,7 +10,6 @@ async function getProduct(url) {
   try {
     const response = await fetch(url);
     const product = await response.json();
-    console.log(product);
     const productPrice = product.prices.currency_symbol + product.prices.price;
     productPage.innerHTML = "";
     productPage.innerHTML += `

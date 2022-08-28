@@ -7,7 +7,6 @@ async function getProducts(url) {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
     adventureList.innerHTML = "";
     productWrapper.innerHTML = "";
     data.forEach((product) => {
@@ -29,8 +28,6 @@ async function getProducts(url) {
       productContainer.backgroundImage = `url(${productBackground})`;
       productContainer.backgroundSize = "cover";
       productContainer.backgroundPosition = "center";
-      console.log(productContainer);
-      console.log(productSlug);
 
       /*       switch (productSlug) {
         case "the-climber":

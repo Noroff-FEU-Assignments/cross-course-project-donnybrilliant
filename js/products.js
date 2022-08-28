@@ -6,7 +6,6 @@ async function getProducts(url) {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
     productWrapper.innerHTML = "";
     data.forEach((product) => {
       const productImage = product.images[0].src;
@@ -20,7 +19,7 @@ async function getProducts(url) {
         <a href="product.html?id=${product.id}">
         <div>
         <img src="${productImage}" alt="${productAlt}" />
-        <div class="product-button">
+        <div class="button">
           <h5>${productName}</h5>
           <p>${productPrice}</p>
         </div></a>`;

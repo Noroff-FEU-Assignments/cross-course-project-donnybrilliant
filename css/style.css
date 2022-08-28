@@ -18,6 +18,7 @@
 body {
   font-family: "DIN 1451 Std", Arial, Helvetica, sans-serif;
   color: var(--black);
+  background-color: var(--white);
 }
 
 header {
@@ -31,8 +32,6 @@ header {
 }
 
 header img {
-  max-width: 6rem;
-  margin: 0.8rem 0rem 0rem 1.5rem;
 }
 
 header img:hover {
@@ -49,6 +48,10 @@ nav a {
 
 nav a:hover {
   color: var(--pink);
+}
+
+header a {
+  padding: 1.5rem;
 }
 
 a {
@@ -113,7 +116,6 @@ h4 {
   font-size: 4rem;
   text-transform: uppercase;
   padding: 2rem 2rem;
-  
 }
 
 h5 {
@@ -125,8 +127,6 @@ h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-
-
 
 #intro {
   max-width: 100%;
@@ -146,8 +146,8 @@ h6 {
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
-  background-color: var(--pink);
   text-transform: uppercase;
+  box-shadow: 0px 3px 6px var(--shadow);
 }
 
 .button:hover {
@@ -168,8 +168,19 @@ h6 {
   background-color: var(--pink);
 }
 
+.product-button {
+  background-color: var(--yellow);
+  border: solid var(--black) 2px;
+  border-radius: 10px;
+  padding: 1.3rem;
+  padding-top: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #next-adventure {
-  background: linear-gradient(180deg, #3a3e41 0%, #1C1C1E 100%);
+  background: linear-gradient(180deg, #3a3e41 0%, #1c1c1e 100%);
   color: var(--white);
   padding-bottom: 5rem;
   padding-top: 5rem;
@@ -211,7 +222,7 @@ h6 {
 }
 
 .continue-arrow a:hover {
-color: var(--yellow);
+  color: var(--yellow);
 }
 
 .continue-arrow p {
@@ -253,17 +264,6 @@ color: var(--yellow);
   padding: 1rem;
 }
 
-.product-button {
-  background-color: var(--yellow);
-  border: solid var(--black) 2px;
-  border-radius: 10px;
-  padding: 1.3rem;
-  padding-top: 1.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #adventure-list {
   scroll-margin-top: 3rem;
 }
@@ -273,10 +273,7 @@ color: var(--yellow);
 }
 
 .product-hero:hover {
-
 }
-
-
 
 /* #the-climber {
   background-position: right;
@@ -292,7 +289,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
-  
+  box-shadow: 0px -3px 6px var(--shadow);
 }
 
 footer a {
@@ -306,7 +303,7 @@ footer a:hover {
 }
 
 @media (max-width: 420px) {
-  footer a{
+  footer a {
     padding: 0.5rem;
   }
 }
@@ -330,7 +327,6 @@ footer a:hover {
   }
 }
 
-
 @media (min-width: 700px) {
   .product-wrapper > div {
     min-width: 45%;
@@ -347,9 +343,7 @@ footer a:hover {
   .product-wrapper > div {
     min-width: 20%;
   }
-
 }
-
 
 #login-page {
   gap: 1rem;
@@ -358,9 +352,8 @@ footer a:hover {
   justify-content: center;
   align-items: flex-end;
 }
-#login-page input 
-{
-width: 80%;
+#login-page input {
+  width: 80%;
 }
 
 #login-page h1 {
@@ -368,17 +361,17 @@ width: 80%;
   margin-bottom: 1rem;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
 }
-::-moz-placeholder { /* Firefox 19+ */
-  
+::-moz-placeholder {
+  /* Firefox 19+ */
 }
-:-ms-input-placeholder { /* IE 10+ */
-  
+:-ms-input-placeholder {
+  /* IE 10+ */
 }
-:-moz-placeholder { /* Firefox 18- */
-  
+:-moz-placeholder {
+  /* Firefox 18- */
 }
 
 .content-frame {
@@ -405,9 +398,8 @@ width: 80%;
 }
 
 #product-page p {
-margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-
 
 #product-page .icons {
   text-align: center;
@@ -423,7 +415,7 @@ margin-bottom: 1.5rem;
     padding: 4rem;
     display: grid;
     column-gap: 6rem;
-   /* row-gap: 1rem; */
+    /* row-gap: 1rem; */
     grid-template-areas:
       "h1 h1 h1"
       "image info info"
@@ -442,7 +434,6 @@ margin-bottom: 1.5rem;
 
   #product-page img {
     grid-area: image;
- 
   }
 
   #product-page .product-description {
@@ -453,18 +444,14 @@ margin-bottom: 1.5rem;
   #product-page h2 {
     grid-area: price;
     justify-self: end;
-
   }
- 
+
   #product-page a {
     grid-area: button;
     justify-self: end;
-
   }
 
   #product-page .icons {
     text-align: left;
   }
-
-  
 }
