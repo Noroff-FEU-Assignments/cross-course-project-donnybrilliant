@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAINYDAYS - Yellow Rain Coats">
+    <meta name="keywords" content="rainydays, yellow, rain, coats, jackets, adventures, explore, outdoors">
+    <title>RAINYDAYS - Product Page</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/din-1451-std" rel="stylesheet">
+    <!-- Hotjar Tracking Code for https://daniel-vier-cross-course-project.netlify.app/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2970443, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/logo.svg" alt="RAINYDAYS Home" width="100px" />
+          </a>
+        <input type="checkbox" id="hamburger-checkbox" />
+        <label for="hamburger-checkbox"><span></span></label>
+        <nav>
+
+            <a href="help.html"><i class="fas fa-question-circle"></i></a>
+            <a href="profile.html"><i class="fas fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <section id="cart" class="content-frame">
+                <span class="breadcrumb">
+                    <h1>CART</h1><i class="fas fa-arrow-circle-right"></i>
+                    CHECKOUT <i class="fas fa-arrow-circle-right"></i> CONFIRMATION
+                </span>
+                <div id="cart-line">
+                    LOADING...
+
+                </div>
+
+                <div id="shipping" class="cart-line">
+                    <h3>SHIPPING OPTIONS</h3>
+                    <div class="shipping-options">
+                        <div>
+                        <input type="radio" name="shipping" id="free" value="free">
+                        <label for="free">Free Shipping</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="shipping" id="regular" value="regular">
+                            <label for="regular">Regular Shipping</label>
+                            </div>
+                        <div>
+                        <input type="radio" name="shipping" id="express" value="express">
+                        <label for="free">Express Shipping</label>
+                        </div>
+                    </div>
+                        <h3><label for="coupon">COUPON CODE</label></h3>
+                            <div class="coupon">
+                            <input name="coupon" id="coupon" placeholder="Enter code">
+                            </div>
+                        </div>
+
+
+                </div>
+                <a href="checkout.html" id="next-button" class="button">
+                    <h2>CHECKOUT</h2>
+                </a>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <a href="contact.html">CONTACT US</a>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>
