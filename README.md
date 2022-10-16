@@ -1,72 +1,46 @@
 # cross-course-project-donnybrilliant
 
-cross-course-project-donnybrilliant created by GitHub Classroom
+![image](https://github.com/donnybrilliant/Portfolio-1/blob/main/assets/images/cross-course-project-header.png)
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
-A simple overview of the use/purpose of the project.
+[Rainydays](https://daniel-vier-cross-course-project.netlify.app/) is a fictional website/store I created for the cross-course-project at Noroff.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This is a project built through two semesters at Noroff.
+We started out designing it in Adobe XD/Figma, focusing on UI/UX, then we created it with HTML & CSS, added JavaScript and then fetch the products from my Wordpress/Woocommerce API. Making it a headless CMS.
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+It is the only yellow raincoat you'll ever need.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+- HTML
+- CSS
+- JavaScript
+- Wordpress/Woocommerce API
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+## Site Architecture
+
+- Home
+- Product overview
+- Product specific page
+- Login site
+- Contact/About
+- Cart
+- Checkout
+- Help
 
 ## Getting Started
 
-### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
-
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
-```
-
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
+[Visit the live site](https://daniel-vier-cross-course-project.netlify.app/)
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+Please dont.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+[email](mailto:daniel.vier@gmail.com)
 
 ## Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+Nothing is ever finished..
